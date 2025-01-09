@@ -3,12 +3,12 @@ aws_region = "us-east-2"
 aws_profile = "default"
 project_name = "Dev-project"
 
-vpc_cidr = "11.0.0.0/16"
+vpc_cidr = "10.0.0.0/16"
 
-public_subnet_cidr = ["11.0.1.0/24", "11.0.2.0/24"]
+public_subnet_cidr = ["10.0.1.0/24", "10.0.2.0/24"]
 us_az = ["us-east-2a","us-east-2b"]
 
-private_subnet_cidr = ["11.0.3.0/24", "11.0.4.0/24"]
+private_subnet_cidr = ["10.0.3.0/24", "10.0.4.0/24"]
 
 
 ami_id = "ami-0866a3c8686eaeeba"
