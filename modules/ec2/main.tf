@@ -1,4 +1,4 @@
-resource "aws_instance" "jenkins_ec2" {
+resource "aws_instance" "dev_proj_ec2" {
 
     ami = var.ami_id
     instance_type = var.instance_type

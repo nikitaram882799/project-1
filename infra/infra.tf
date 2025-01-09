@@ -25,14 +25,14 @@ module "ec2" {
     enable_public_ip = var.enable_public_ip
     project_name = var.project_name
     subnet_id = tolist(module.vpc.dev_public_subnet)[0]
-    sg_id = [module.sg.dev_sg,module.sg.ec2_jenkins_port_8080,module.sg.python_api_sg]
+    sg_id = [module.sg.dev_sg,module.sg.python_api_sg]
     
 }
 
 module "alb" {
     source = "../modules/alb"
 
-    jenkins_ec2_id = module.ec2.jenkins_ec2
+    dev_proj_ec2_id = module.ec2.dev_proj_ec2
     lb_target_group_port = var.lb_target_group_port
     lb_listner_default_action = var.lb_listner_default_action
     lb_target_group_protocol = var.lb_target_group_protocol

@@ -62,7 +62,7 @@ variable "lb_target_group_attachment_port" {
  
 }
 
-variable "jenkins_ec2_id" {
+variable "dev_proj_ec2_id" {
   
 }
 variable "lb_https_listner_port" {}

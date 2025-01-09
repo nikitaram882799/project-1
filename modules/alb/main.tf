@@ -26,7 +26,7 @@ resource "aws_lb_listener" "lb_listener" {
 
 resource "aws_lb_target_group_attachment" "lb_target_group_attachment" {
   target_group_arn = aws_lb_target_group.lb_target_group.arn
-  target_id        = var.jenkins_ec2_id# Replace with your EC2 instance reference
+  target_id        = var.dev_proj_ec2_id# Replace with your EC2 instance reference
   port             = var.lb_target_group_attachment_port
 }
 
