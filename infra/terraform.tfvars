@@ -1,6 +1,6 @@
 
 aws_region = "us-west-2"
-aws_profile = "demo"
+aws_profile = "profile demo"
 project_name = "Dev-project"
 
 vpc_cidr = "10.0.0.0/16"
