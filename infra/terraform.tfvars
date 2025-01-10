@@ -11,8 +11,8 @@ us_az = ["us-west-2a","us-west-2b"]
 private_subnet_cidr = ["10.0.3.0/24", "10.0.4.0/24"]
 
 
-ami_id = "ami-0866a3c8686eaeeba"
-key_name = "dev-key"
+ami_id = "ami-05d38da78ce859165"
+key_name = "sample-key"
 instance_type = "t2.medium"
 enable_public_ip = "true"
 
